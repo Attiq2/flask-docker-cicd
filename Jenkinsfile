@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Attiq2/flask-docker-cicd'
+                git branch: 'main', url: 'https://github.com/Attiq2/flask-docker-cicd'
             }
         }
 
